@@ -70,7 +70,7 @@ def get_host_status
 			url: uri, 
 			headers: $headers, 
 			timeout: $timeout, 
-			verify_ssl: False
+			verify_ssl: false 
 	)
     json_data = JSON.parse(response)
     log("info", uri)
@@ -102,7 +102,7 @@ def add_puppet_class(host_id)
 		    headers: $headers,
 			timeout: $timeout,
 			payload: body.to_json, 
-			verify_ssl:  False
+			verify_ssl: false 
 	)
   rescue Exception => err
     error_handler(err)
