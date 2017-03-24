@@ -1,0 +1,233 @@
+---
+object_type: class
+version: 1.0
+object:
+  attributes:
+    description: 
+    display_name: 
+    name: Methods
+    type: 
+    inherits: 
+    visibility: 
+    owner: 
+  schema:
+  - field:
+      aetype: attribute
+      name: serverurl
+      display_name: 
+      datatype: string
+      priority: 1
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: access_key
+      display_name: 
+      datatype: string
+      priority: 2
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: secret_key
+      display_name: 
+      datatype: password
+      priority: 3
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: timeout
+      display_name: 
+      datatype: integer
+      priority: 4
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: protocol
+      display_name: 
+      datatype: string
+      priority: 5
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: port
+      display_name: 
+      datatype: integer
+      priority: 6
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: check_limit
+      display_name: 
+      datatype: integer
+      priority: 7
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: check_period
+      display_name: 
+      datatype: integer
+      priority: 8
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: critical_level
+      display_name: 
+      datatype: string
+      priority: 9
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: scan_list
+      display_name: 
+      datatype: array
+      priority: 10
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 
+  - field:
+      aetype: attribute
+      name: verify_ssl
+      display_name: 
+      datatype: boolean
+      priority: 11
+      owner: 
+      default_value: 
+      substitute: true
+      message: create
+      visibility: 
+      collect: 
+      scope: 
+      description: 
+      condition: 
+      on_entry: 
+      on_exit: 
+      on_error: 
+      max_retries: 
+      max_time: 

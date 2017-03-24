@@ -5,6 +5,6 @@ This repository contains some third parties automate integrations I've developed
 
 Documentation
 =====================
-- Red Hat: https://access.redhat.com/documentation/en-US/CloudForms
+- Red Hat CloudForms: https://access.redhat.com/documentation/en/red-hat-cloudforms/ 
 - ManageIQ: http://manageiq.org/documentation/
 
