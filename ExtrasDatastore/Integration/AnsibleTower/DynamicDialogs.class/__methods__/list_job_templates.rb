@@ -1,5 +1,7 @@
 #
-# Description: List available job templates in Ansible Tower provider
+# Description: List available job templates in Ansible Tower
+#
+# Author: Raul Sevilla
 #
 
 def log(level, msg)
