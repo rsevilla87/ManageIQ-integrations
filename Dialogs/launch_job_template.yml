@@ -1,0 +1,57 @@
+---
+- description: Launch job template
+  buttons: submit,cancel
+  label: Job template
+  blueprint_id: 
+  dialog_tabs:
+  - description: Job template
+    display: edit
+    label: Job template
+    display_method: 
+    display_method_options: 
+    position: 0
+    dialog_groups:
+    - description: 
+      display: edit
+      label: Ansible tower options
+      display_method: 
+      display_method_options: 
+      position: 0
+      dialog_fields:
+      - name: job_template
+        description: 
+        data_type: 
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        values_method: 
+        values_method_options: {}
+        options:
+          :sort_by: :value
+          :sort_order: :ascending
+        label: Job template name
+        position: 0
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: true
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: 
+        visible: true
+        type: DialogFieldDropDownList
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: Integration/AnsibleTower
+          ae_class: DynamicDialogs
+          ae_instance: ListJobTemplates
+          ae_message: 
+          ae_attributes: {}
