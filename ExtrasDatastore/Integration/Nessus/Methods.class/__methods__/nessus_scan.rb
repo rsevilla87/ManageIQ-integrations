@@ -133,7 +133,7 @@ begin
     uri = "#{@protocol}://#{@serverurl}:#{@port}/scans/#{scan_id}"
     resp = rest_request(uri)
     elapsed_time = 0
-    until resp["info"]["status"] != "running"
+    while resp["info"]["status"] == "running"
       log("info", "Scan #{scan_id} in progress")
       elapsed_time = @check_period + elapsed_time
       sleep(@check_period)
@@ -156,12 +156,12 @@ begin
 
   print_banner("nessus_scan method started")
   check_availability
-  for scan in @scan_list
+  @scan_list.each do |scan|
     scan_id = get_scan_id(scan["scanname"])
     launch_scan(scan_id, target)
     scan_result = check_scan(scan_id)
     eval_result(scan_result)
-    if !@threat_list.empty?
+    if @threat_list.any? 
       raise("Critical vulnerabilities found in #{scan['scanname']}:\n#{@threat_list}")
     else
       log("info", "No critical vulnerabilities found in #{scan['scanname']}")
