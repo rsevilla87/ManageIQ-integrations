@@ -1,0 +1,284 @@
+---
+- description: 
+  buttons: submit,cancel
+  label: Create nuage subnet
+  blueprint_id: 
+  dialog_tabs:
+  - description: 
+    display: edit
+    label: Create nuage subnet
+    display_method: 
+    display_method_options: 
+    position: 0
+    dialog_groups:
+    - description: 
+      display: edit
+      label: Subnet information
+      display_method: 
+      display_method_options: 
+      position: 0
+      dialog_fields:
+      - name: nuage_enterprise
+        description: 
+        data_type: 
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value:
+        values_method: 
+        values_method_options: {}
+        options:
+          :force_multi_value: false
+        label: Nuage Enterprise
+        position: 0
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: true
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: true
+        visible: true
+        type: DialogFieldDropDownList
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: Integration/Nuage
+          ae_class: DynamicDropdowns
+          ae_instance: ListEnterprises
+          ae_message: 
+          ae_attributes: {}
+      - name: nuage_domain
+        description: 
+        data_type: 
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: "!"
+         - Error listing Nuage domains
+        values_method: 
+        values_method_options: {}
+        options:
+          :force_multi_value: false
+        label: Domain
+        position: 1
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: true
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: true
+        trigger_auto_refresh: true
+        visible: true
+        type: DialogFieldDropDownList
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: Integration/Nuage
+          ae_class: DynamicDropdowns
+          ae_instance: ListDomains
+          ae_message: 
+          ae_attributes: {}
+      - name: nuage_zone
+        description: 
+        data_type: 
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :force_multi_value: false
+        label: Zone
+        position: 2
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: true
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: true
+        trigger_auto_refresh: false
+        visible: true
+        type: DialogFieldDropDownList
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: Integration/Nuage
+          ae_class: DynamicDropdowns
+          ae_instance: ListZones
+          ae_message: 
+          ae_attributes: {}
+      - name: name
+        description: 
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        default_value: cfme-subnet
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Subnet name
+        position: 4
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: false
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: 
+        visible: true
+        type: DialogFieldTextBox
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: address
+        description: 
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        default_value:
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Subnet address
+        position: 5
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: false
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: 
+        visible: true
+        type: DialogFieldTextBox
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: netmask
+        description: 
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        default_value:
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Subnet netmask
+        position: 6
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: false
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: 
+        visible: true
+        type: DialogFieldTextBox
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+      - name: gateway
+        description: 
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        default_value:
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Gateway
+        position: 7
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: false
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: 
+        visible: true
+        type: DialogFieldTextBox
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
